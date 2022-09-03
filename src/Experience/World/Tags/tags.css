@@ -1,0 +1,54 @@
+#DPCTag{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color:white;
+    pointer-events: none;
+}
+.DPC, .artsworld, .visualizer{
+    opacity: 0;
+}
+#DPCTag .title_main{
+    font-size: 3.5em;
+    font-weight: 700;
+    white-space: nowrap;
+}
+#DPCTag .description,#DPCTag li{
+    font-size: 1.2em;
+}
+#DPCTag .title_secondry{
+    font-size: 1.6em;
+    font-weight: 700;
+}
+#DPCTag li{
+    line-height: 30px;
+}
+#DPCTag .grid{
+    display: flex;
+    justify-content: space-between;
+}
+.callToAction {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 50px;
+    color:white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    align-self: center;
+    cursor: pointer;
+    pointer-events: all;
+}
+.callToAction img{
+    filter: invert(1);
+    transform: translate(7px, 2px);
+}
+.callToAction:hover{
+    background-color: white;
+    filter: invert(0);
+    color: #140c16;
+}
+.callToAction:hover.callToAction img{
+    filter: invert(0);
+}
