@@ -6,7 +6,7 @@ import Particles from './Particles/Particles'
 
 export default function World() {
     const props = {
-        text: 'HI,\nI\'M PRAVEEN',
+        text: 'BLACKHOLE',
         amount: 10000,
         particleSize: 0.02,
         particleColor: 0xffffff,
