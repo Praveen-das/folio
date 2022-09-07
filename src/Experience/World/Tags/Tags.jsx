@@ -41,10 +41,15 @@ function Tags() {
         }
     }, [animation, animArray, mountTag, unmountTag, tl])
 
+    useEffect(() => {
+
+    }, [])
+
+
     return (
         <>
-            <Html scale={[0.2, 0.2, 0.2]} position={[0.850, 2.995, -0.615]} quaternion={[0, 0.235, 0, 0.971]} transform center>
-                <label htmlFor="">ABC</label>
+            <Html scale={[0.035, 0.035, 0.035]} position={[0.425, 3.35, -0.360]} quaternion={[0, 0.235, 0, 0.971]} transform>
+                <label className='mainTitle' htmlFor="">Hi,<br />I'M PRAVEEN</label>
             </Html>
             <Html scale={[0.035, 0.035, 0.035]} position={[0.325, 2.18, -0.260]} quaternion={[0, 0.266173, 0, 0.963925]} >
                 <div id="DPCTag">
@@ -61,7 +66,7 @@ function Tags() {
                         </ul>
                         <button className='callToAction DPC'>
                             VISIT
-                            <img alt='' width={19} src="https://img.icons8.com/material-outlined/24/000000/external-link.png"/>
+                            <img alt='' width={19} src="https://img.icons8.com/material-outlined/24/000000/external-link.png" />
                         </button>
                     </div>
                 </div>

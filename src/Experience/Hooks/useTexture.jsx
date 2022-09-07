@@ -10,7 +10,7 @@ export function useTexture(path) {
         }
         return texture
     }
-    // texture.magFilter
+    
     texture.flipY = false
     texture.encoding = sRGBEncoding
     return texture

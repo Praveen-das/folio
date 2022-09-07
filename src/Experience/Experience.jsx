@@ -1,7 +1,9 @@
-import { Effects, Loader, OrbitControls, Stats, useGLTF } from '@react-three/drei'
+import { Loader, OrbitControls, Stats, useGLTF } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense } from 'react'
 import World from './World/World'
+import Effects from './Environment/Effects'
+import { LinearEncoding, sRGBEncoding } from 'three'
 
 function Experience() {
     const { cameras } = useGLTF('/models/model.glb', true)
@@ -11,15 +13,14 @@ function Experience() {
         <>
             <Stats showPanel={0} className="stats" />
             <Canvas
-                dpr={[1,1.5]}
-                gl={{ antialias: false }}
-                camera={camera}
+                dpr={[devicePixelRatio, 1.5]}
+                // camera={camera}
             >
                 <Suspense fallback={null}>
                     <World />
                 </Suspense>
-                <Effects />
-                {/* <OrbitControls/> */}
+                {/* <Effects /> */}
+                <OrbitControls />
             </Canvas>
             <Loader />
         </>

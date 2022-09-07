@@ -2,7 +2,7 @@ import { useAnimations, useGLTF, useScroll } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import React, { useEffect } from 'react'
 import { MathUtils, MeshBasicMaterial } from 'three'
-import { useTexture } from '../Utilz/useTexture'
+import { useTexture } from '../Hooks/useTexture'
 
 export default function Helicopter() {
     const scroll = useScroll()
