@@ -41,37 +41,17 @@ function Tags() {
         }
     }, [animation, animArray, mountTag, unmountTag, tl])
 
-    useEffect(() => {
-
-    }, [])
-
-
     return (
         <>
-            <Html scale={[0.035, 0.035, 0.035]} position={[0.425, 3.35, -0.360]} quaternion={[0, 0.235, 0, 0.971]} transform>
+            <Html visible={true} scale={[0.035, 0.035, 0.035]} position={[0.425, 3.35, -0.360]} quaternion={[0, 0.235, 0, 0.971]} transform>
                 <label className='mainTitle' htmlFor="">Hi,<br />I'M PRAVEEN</label>
             </Html>
             <Html scale={[0.035, 0.035, 0.035]} position={[0.325, 2.18, -0.260]} quaternion={[0, 0.266173, 0, 0.963925]} >
-                <div id="DPCTag">
-                    <label className='title_main DPC' htmlFor="">Disney Plus Clone</label>
-                    <p className='description DPC'>Fully functional, responsive web app which  resembles the official Disney plus website.</p>
-                    <label className='title_secondry DPC' htmlFor="">Built Using</label>
-                    <div className='grid'>
-                        <ul className='DPC'>
-                            <li>ReactJs</li>
-                            <li>NodeJs</li>
-                            <li>Firebase</li>
-                            <li>Razorpay</li>
-                            <li>Css</li>
-                        </ul>
-                        <button className='callToAction DPC'>
-                            VISIT
-                            <img alt='' width={19} src="https://img.icons8.com/material-outlined/24/000000/external-link.png" />
-                        </button>
-                    </div>
+                <div id="works">
+                    
                 </div>
             </Html>
-            <Html scale={[0.035, 0.035, 0.035]} position={[0.274, 1.775, 0.306]} quaternion={[0, -0.561463, 0, 0.827502]}>
+            <Html scale={[0.035, 0.035, 0.035]} position={[0.274, 1.775, 0.306]} quaternion={[0, -0.561463, 0, 0.827502]} transform>
                 <div id="DPCTag">
                     <label className='title_main artsworld' htmlFor="">Disney Plus Clone</label>
                     <p className='description artsworld'>Fully functional, responsive web app which  resembles the official Disney plus website.</p>
